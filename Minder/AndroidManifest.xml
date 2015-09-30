@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="io.ideaweave.ideaminder"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="13"
+        android:targetSdkVersion="22" />
+    
+    <permission android:name="eu.corre.minder.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+    
+    
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+	<uses-permission android:name="android.permission.WAKE_LOCK" />
+    
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/minder_lightbulb_8"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        
+        <meta-data
+           android:name="com.google.android.gms.version"
+           android:value="@integer/google_play_services_version" />
+        <activity
+            android:name="io.ideaweave.ideaminder.SplashActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity> 
+        <activity
+            android:name="io.ideaweave.ideaminder.Login" >
+        </activity>
+        <activity 
+            android:name="io.ideaweave.ideaminder.Homepage" >
+        </activity>
+        <activity
+            android:name="io.ideaweave.ideaminder.CreateIdea" >
+        </activity>
+        <activity
+            android:name="io.ideaweave.ideaminder.ViewIdeasList" >
+        </activity>
+        <activity 
+            android:name="io.ideaweave.ideaminder.ViewSelectedIdea">
+        </activity>
+        <activity 
+            android:name="io.ideaweave.ideaminder.ViewMyIdeasList">
+        </activity>
+        <activity 
+            android:name="io.ideaweave.ideaminder.ViewLikedIdeasList">
+        </activity>
+        <activity 
+            android:name="io.ideaweave.ideaminder.Settings">
+        </activity>
+   </application>
+
+</manifest>

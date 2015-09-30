@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+
+     <RelativeLayout 
+            android:id="@+id/home_fragment_lightbulb_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible" >
+            <ImageView 
+                android:id="@+id/home_fragment_lightbulb"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerInParent="true" />
+        </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/home_fragment_info_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:visibility="gone" >
+
+        <RelativeLayout
+            android:id="@+id/home_fragment_creator_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:visibility="invisible" >
+            
+	        <TextView
+	            android:id="@+id/home_fragment_creator"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_centerHorizontal="true"
+	            android:layout_centerVertical="true"
+	            android:textStyle="italic"
+	            android:textColor="@color/light_grey" />
+	    </RelativeLayout>
+        
+        <RelativeLayout
+            android:id="@+id/home_fragment_no_idea_text_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_centerHorizontal="true"
+            android:layout_above="@id/home_fragment_creator_layout" >
+            
+	        <TextView
+	            android:id="@+id/text_idea"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="@string/wait"
+	            android:textAppearance="?android:attr/textAppearanceMedium"
+	            android:textStyle="bold"
+	            android:textColor="@color/dark_grey" />
+	    </RelativeLayout>
+	    
+        <RelativeLayout 
+            android:id="@+id/home_fragment_view_old_ideas_layout"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/grey"
+            android:visibility="gone" >
+	        <RelativeLayout
+	            android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+	            android:layout_centerInParent="true" >
+	        <Button
+	            android:id="@+id/btn_view_old_ideas"
+	            android:layout_width="40dp"
+	            android:layout_height="35dp"
+	            android:background="@drawable/minder_oldideas"
+	            android:visibility="invisible" />
+	        </RelativeLayout>
+	        <RelativeLayout 
+	            android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="15dp"
+                android:layout_centerVertical="true" >
+	            <Button
+	                android:id="@+id/home_fragment_btn_refresh"
+	                android:layout_width="35dp"
+	                android:layout_height="35dp"
+	                android:background="@drawable/minder_refresh" />
+	        </RelativeLayout>
+	    </RelativeLayout>      
+    </RelativeLayout>
+    
+    <RelativeLayout 
+        android:id="@+id/home_fragment_idea_view_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+        
+        <RelativeLayout
+            android:id="@+id/home_fragment_buttons_layout"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_alignParentBottom="true"
+            android:visibility="gone"
+            android:background="@color/grey" >
+            
+            <RelativeLayout 
+                android:id="@+id/btn_dislike_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="15dp"
+                android:layout_centerVertical="true" >
+	            <Button
+	                android:id="@+id/btn_dislike"
+	                android:layout_width="40dp"
+	                android:layout_height="35dp"
+	                android:text=""
+	                android:background="@drawable/minder_dislike" />
+            </RelativeLayout>
+            
+            <RelativeLayout 
+                android:id="@+id/btn_report_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true" >
+	            <Button
+	                android:id="@+id/btn_report"
+	                android:layout_width="40dp"
+	                android:layout_height="40dp"
+	                android:layout_centerVertical="true"
+	                android:background="@drawable/minder_report"
+	                android:visibility="gone" />
+            </RelativeLayout>
+            
+            <RelativeLayout 
+                android:id="@+id/btn_like_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="15dp"
+                android:layout_centerVertical="true" >
+	            <Button
+	                android:id="@+id/btn_like"
+	                android:layout_width="40dp"
+	                android:layout_height="35dp"
+	                android:text=""
+	                android:background="@drawable/minder_like" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+        
+    </RelativeLayout>
+
+</RelativeLayout>

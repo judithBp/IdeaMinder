@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<string name="app_id">2jmj7l5rSw0yVb/vlWAYkK/YBwk=</string>
+    <string name="app_name">Minder</string>
+    <string name="google_plus_generic_error">Sign in with Google is not available.</string>
+    
+    <string name="no_liked_ideas">No liked ideas</string>
+    <string name="no_created_ideas">No created ideas</string>
+    <string name="wait">Please wait! Retrieving data!</string>
+    <string name="no_new_ideas">No new ideas</string>
+    <string name="dialog_leave_page">Do you really want to leave this page? All entered information will be lost!</string>
+    <string name="dialog_no_text">Please enter your idea in the field "new idea".</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    
+    <string-array name="language_array">
+        <item>English</item>
+        <item>Francais</item>
+        <item>Deutsch</item>
+        <item>Espanol</item>
+    </string-array>
+    
+    
+</resources>

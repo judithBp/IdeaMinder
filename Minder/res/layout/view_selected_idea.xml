@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@color/white" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:background="@color/blue" >
+        
+        <ImageButton
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="15dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/minder_menu"
+            android:clickable="false"
+            android:visibility="invisible" />
+        
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="65dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/logo_minder" />
+
+    </RelativeLayout>
+    
+    <RelativeLayout 
+            android:id="@+id/view_selected_lightbulb_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone" >
+            <ImageView 
+                android:id="@+id/view_selected_lightbulb"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerInParent="true" />
+        </RelativeLayout>
+    
+    <RelativeLayout 
+        android:id="@+id/content_view_selected"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white" >
+        
+        <RelativeLayout 
+            android:id="@+id/view_selected_idea_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="60dp"
+	        android:layout_alignParentTop="true"
+        	android:layout_centerVertical="true"
+        	android:gravity="center_vertical" 
+	        android:background="@color/grey" >
+	        <TextView
+	           android:id="@+id/view_selected_idea"
+	           android:layout_width="match_parent"
+	           android:layout_height="wrap_content"
+		       android:gravity="center_horizontal"
+		       android:paddingLeft="15dp"
+		       android:paddingRight="15dp"
+		       android:textStyle="bold"
+		       android:textColor="@color/dark_grey"
+		       android:textAppearance="?android:attr/textAppearanceMedium" />
+	        <TextView
+		        android:id="@+id/view_selected_creator"
+		        android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            android:layout_below="@id/view_selected_idea"
+		       		android:gravity="center_horizontal"
+		            android:textStyle="italic"
+		            android:paddingLeft="15dp"
+		            android:paddingRight="15dp"
+		            android:textColor="@color/light_grey" />
+         </RelativeLayout>
+         
+        
+        
+        <ScrollView 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/view_selected_idea_layout">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+	        <TextView 
+	            android:id="@+id/view_selected_info"
+	        	android:layout_width="match_parent"
+	        	android:paddingLeft="15dp"
+	        	android:paddingRight="15dp"
+	        	android:paddingTop="15dp"
+	        	android:paddingBottom="15dp"
+	        	android:gravity="center_horizontal"
+	        	android:layout_height="wrap_content"
+	        	android:textColor="@color/light_grey"
+		        android:text="Historically, iGEM has been a competition for college students; however, recently, they have also started to involve high schools in the competition. Although the competition exists, there is low involvement from high schools across the world." />
+	        
+         <RelativeLayout 
+             android:id="@+id/view_selected_rating_layout"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:gravity="center_horizontal"
+             android:visibility="visible" >
+	         <RelativeLayout
+	             android:id="@+id/view_selected_likes_layout"
+	             android:layout_width="wrap_content"
+	             android:layout_height="wrap_content"
+	             android:layout_marginRight="25dp"
+	             android:layout_centerHorizontal="true" >
+
+	             <TextView
+		             android:id="@+id/view_selected_likes"
+	                 android:layout_width="wrap_content"
+	                 android:layout_height="wrap_content"
+	                 android:layout_marginBottom="5dp"
+	                 android:text="10"
+	                 android:textColor="@color/blue"
+	                 android:gravity="center_horizontal"
+	                 android:layout_centerHorizontal="true" />
+
+		         <ImageView
+		             android:layout_below="@id/view_selected_likes"
+		             android:layout_width="40dp"
+		             android:layout_height="35dp"
+		             android:src="@drawable/minder_like" />
+		     </RelativeLayout>
+		     
+	         <RelativeLayout
+	             android:id="@+id/view_selected_dislikes_layout"
+	             android:layout_toRightOf="@id/view_selected_likes_layout"
+	             android:layout_width="wrap_content"
+	             android:layout_height="wrap_content" >
+
+		         <TextView
+		             android:id="@+id/view_selected_dislikes"
+		             android:layout_width="wrap_content"
+		             android:layout_height="wrap_content"
+		             android:layout_marginBottom="5dp"
+		             android:text="5"
+		             android:textColor="@color/blue"
+		             android:gravity="center_horizontal"
+		             android:layout_centerHorizontal="true" />
+
+		         <ImageView 
+		             android:layout_below="@id/view_selected_dislikes"
+		             android:layout_width="40dp"
+		             android:layout_height="35dp"
+		             android:src="@drawable/minder_dislike" />
+		     </RelativeLayout>
+		     
+        </RelativeLayout> 
+        <RelativeLayout 
+            android:id="@+id/view_selected_contact_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:visibility="gone" >
+            <TextView 
+                android:id="@+id/view_selected_contact"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+	        	android:paddingLeft="15dp"
+	        	android:paddingRight="15dp"
+                android:text="Contact: "
+                android:textColor="@color/blue" />
+        </RelativeLayout>
+        	</LinearLayout>  
+        </ScrollView>
+        
+        <RelativeLayout 
+             android:id="@+id/view_selected_button_layout_my_idea"
+             android:layout_width="match_parent"
+             android:layout_height="65dp"
+             android:layout_alignParentBottom="true"
+             android:background="@color/grey" >
+             
+             <Button
+                 android:id="@+id/view_selected_btn_edit"
+                 android:layout_width="23dp"
+                 android:layout_height="35dp"
+                 android:layout_alignParentLeft="true"
+                 android:layout_centerVertical="true"
+                 android:layout_marginLeft="15dp"
+                 android:background="@drawable/minder_edit"
+                 android:text="" />
+             
+             <Button
+                 android:id="@+id/view_selected_btn_delete"
+                 android:layout_width="35dp"
+                 android:layout_height="35dp"
+                 android:layout_alignParentRight="true"
+                 android:layout_centerVertical="true"
+                 android:layout_marginRight="15dp"
+                 android:background="@drawable/minder_delete"
+                 android:text="" />
+         </RelativeLayout>
+         
+        <RelativeLayout 
+            android:id="@+id/view_selected_button_layout_new_liked"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/grey"
+            android:visibility="gone" >
+            
+            <Button
+                 android:id="@+id/view_selected_btn_next"
+                 android:layout_width="35dp"
+                 android:layout_height="35dp"
+                 android:layout_alignParentRight="true"
+                 android:layout_centerVertical="true"
+                 android:layout_marginRight="15dp"
+                 android:background="@drawable/minder_next" />
+        </RelativeLayout> 
+        
+        <RelativeLayout 
+            android:id="@+id/view_selected_button_layout_liked_idea"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/grey"
+            android:visibility="gone" >
+            
+            <Button
+                 android:id="@+id/view_selected_btn_delete_liked"
+                 android:layout_width="35dp"
+                 android:layout_height="35dp"
+                 android:layout_alignParentRight="true"
+                 android:layout_centerVertical="true"
+                 android:layout_marginRight="15dp"
+                 android:background="@drawable/minder_delete"
+                 android:text="" />
+        </RelativeLayout> 
+        
+    </RelativeLayout>
+</LinearLayout>

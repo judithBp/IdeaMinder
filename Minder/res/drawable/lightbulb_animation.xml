@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="false" >
+    <item 
+        android:drawable="@drawable/minder_lightbulb_1"
+        android:duration="350" />
+    <item
+        android:drawable="@drawable/minder_lightbulb_2"
+        android:duration="350" />
+    <item
+        android:drawable="@drawable/minder_lightbulb_3"
+        android:duration="350" />
+    <item
+        android:drawable="@drawable/minder_lightbulb_4"
+        android:duration="350" />
+    <item
+        android:drawable="@drawable/minder_lightbulb_5"
+        android:duration="350" />
+    <item
+        android:drawable="@drawable/minder_lightbulb_6"
+        android:duration="350" />
+    <item
+        android:drawable="@drawable/minder_lightbulb_7"
+        android:duration="350" />
+    <item
+        android:drawable="@drawable/minder_lightbulb_8"
+        android:duration="350" />
+    <item
+        android:drawable="@drawable/minder_lightbulb_9"
+        android:duration="350" />
+    <item
+        android:drawable="@drawable/minder_lightbulb_10"
+        android:duration="350" />
+    <item
+        android:drawable="@drawable/minder_lightbulb_11"
+        android:duration="350" />
+    <item
+        android:drawable="@drawable/minder_lightbulb_12"
+        android:duration="350" />
+    <item
+        android:drawable="@drawable/minder_lightbulb_13"
+        android:duration="350" />
+    <item
+        android:drawable="@drawable/minder_lightbulb_14"
+        android:duration="350" />
+</animation-list>

@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@color/white" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:background="@color/blue" >
+        
+        <ImageButton
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="15dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/minder_menu"
+            android:clickable="false"
+            android:visibility="invisible" />
+        
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="65dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/logo_minder" />
+
+    </RelativeLayout>
+	
+     <RelativeLayout 
+            android:id="@+id/create_lightbulb_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible" >
+            <ImageView 
+                android:id="@+id/create_lightbulb"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerInParent="true" />
+        </RelativeLayout>
+    
+	<ScrollView
+	    	android:id="@+id/create_scroll_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone" >
+    <LinearLayout
+        android:id="@+id/content_create"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+            
+            <EditText
+                android:id="@+id/new_idea"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="60dp"
+                android:maxLength="140"
+                android:ems="10"
+                android:inputType="textMultiLine"
+                android:imeOptions="actionDone"
+                android:selectAllOnFocus="true"
+                android:text="Title"
+                android:hint="Add a descriptive title of your idea"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:textColor="@color/dark_grey"
+                android:textColorHint="@color/light_grey"
+                android:textColorHighlight="@color/blue"
+                android:background="@color/grey" >
+            </EditText>
+            
+	            
+	        <MultiAutoCompleteTextView
+	            android:id="@+id/create_tags"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:minHeight="60dp"
+                android:inputType="text"
+                android:singleLine="true"
+                android:text="#"
+                android:hint="Add tags for your idea"
+                android:imeOptions="actionDone"
+                android:selectAllOnFocus="true"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:textColor="@color/dark_grey"
+                android:textColorHint="@color/light_grey"
+                android:textColorHighlight="@color/blue"
+                android:background="@color/white"
+                android:visibility="gone" >
+	        </MultiAutoCompleteTextView>
+	           
+
+            <Spinner
+                android:id="@+id/language_idea"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:textColor="@color/dark_grey"
+                android:background="@color/white" />
+       
+            <EditText
+                android:id="@+id/info_create"
+                android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:minHeight="60dp"
+                android:ems="10"
+                android:inputType="textMultiLine"
+                android:text="Additional information"
+                android:hint="Add a brief description of your idea"
+                android:imeOptions="actionDone"
+                android:selectAllOnFocus="true"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:textColor="@color/dark_grey"
+                android:textColorHint="@color/light_grey"
+                android:textColorHighlight="@color/blue"
+                android:background="@color/grey" >
+            </EditText>
+
+            <EditText
+                android:id="@+id/create_contact"
+                android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:minHeight="60dp"
+                android:ems="10"
+                android:inputType="textMultiLine"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:textColor="@color/dark_grey"
+                android:textColorHint="@color/light_grey"
+                android:textColorHighlight="@color/blue"
+                android:background="@color/grey"
+                android:text="Contact information"
+                android:hint="Add your contact information"
+                android:imeOptions="actionDone"
+                android:selectAllOnFocus="true"
+                android:visibility="gone" >
+            </EditText>
+
+        </LinearLayout>
+        
+        <RelativeLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+	        <Button
+	            android:id="@+id/btn_create"
+	            android:layout_width="35dp"
+	            android:layout_height="35dp"
+	            android:layout_marginTop="15dp"
+	            android:layout_marginBottom="15dp"
+	            android:layout_marginRight="15dp"
+	            android:layout_alignParentRight="true"
+	            android:background="@drawable/minder_add"
+	            android:text=""
+	            android:onClick="create" />
+        </RelativeLayout>
+
+    </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

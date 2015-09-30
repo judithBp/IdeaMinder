@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/action_bar_layout_homepage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/blue" >
+        
+        <Button
+            android:id="@+id/btn_menu_homepage"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="15dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/minder_menu"
+            android:onClick="showPopup" />
+        
+        <ImageView
+            android:id="@+id/homepage_title"
+            android:layout_width="100dp"
+            android:layout_height="65dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/logo_minder" />
+
+    </RelativeLayout>
+    
+    <FrameLayout
+        android:id="@+id/homepage_main_content_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white" >
+        
+    </FrameLayout>
+
+</LinearLayout>
